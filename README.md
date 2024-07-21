@@ -1,7 +1,7 @@
 # Tailored CV for Jobs
 
 **Course:** OMC207 Mini Project, Second Semester MCA
-
+**NOTE**: This branch uses `Bring Your Own Key`.
 ## Overview
 
 The **Resume Tailoring Application** is a Streamlit-based tool designed to help users customize their resumes to match specific job descriptions. By leveraging the capabilities of the GPT-4o model, this application ensures that resumes are tailored to highlight relevant skills, experiences, and qualifications as per the job requirements, thus enhancing the chances of success in job applications.
@@ -80,12 +80,6 @@ This project is part of the OMC207 Mini Project for the second semester of the M
     pip install -r requirements.txt
     ```
 
-3. **Set Up OpenAI API Key:**
-    - Obtain an API key from OpenAI.
-    - Set up the API key in your environment. You can do this by adding the following line to your `.bashrc` or `.bash_profile`:
-        ```bash
-        export OPENAI_API_KEY='your_openai_api_key'
-        ```
 
 ## Usage
 

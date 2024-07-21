@@ -6,10 +6,6 @@ from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain_openai.chat_models import ChatOpenAI
 
-load_dotenv()
-
-OPENAI_API_KEY= os.environ.get("OPENAI_API_KEY")
-openai.api_key = OPENAI_API_KEY
 
 prompt_template = PromptTemplate(
     input_variables=["original_resume", "job_description"],
@@ -36,8 +32,8 @@ Based on the following original resume and job description, generate a tailored 
 """
 )
 
-def get_cv_chain(api_key=None):
-    llm = ChatOpenAI(model="gpt-4")
+def get_cv_chain(api_key:str):
+    llm = ChatOpenAI(model="gpt-4", api_key=api_key)
     cv_chain = LLMChain(prompt=prompt_template, llm=llm)
     return cv_chain
 
