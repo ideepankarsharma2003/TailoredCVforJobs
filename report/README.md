@@ -438,6 +438,12 @@ Precision measures the accuracy of the positive predictions made by the model, w
 \[ \text{Precision} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Positives}} \]
 \[ \text{Recall} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}} \]
 
+
+
+(((p1-q1)^2+..+ (pn-qn)^2)^.5)/n
+
+
+
 **Purpose:**
 These metrics provide insights into the effectiveness of the resume tailoring algorithms in identifying and highlighting relevant skills and experiences.
 
